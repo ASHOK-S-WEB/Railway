@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-size: larger;
+}
+
+.login {
+  text-align: center;
+  border-radius: 5%;
+  border: 1px solid;
+  width: 25vw;
+  margin: 13vh auto;
+  box-shadow: 2px 2px 30px;
+}
+
+.a {
+  position: relative;
+  width: 71%;
+  margin: auto;
+  text-align: left;
+}
+
+.bttn1,
+.bttn2 {
+  padding: 3%;
+  display: block;
+  margin: 10% auto;
+  width: 71%;
+  box-shadow: 2px 2px 10px;
+}
+
+.bttn1:hover,
+.bttn2:hover {
+  box-shadow: 4px 4px 10px;
+  width: 73%;
+  background-color: #28df99;
+}
