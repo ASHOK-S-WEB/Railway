@@ -2,11 +2,47 @@
 <html>
   <head>
     <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form>
-      <label>Enter Username</label>
-      <input type="text" placeholder="Enter between 3 to 10">
+    <form id="myform" action="report.html" method="GET">
+      <div>
+      <label for="fname">First Name<span class="required">*</span></label>
+      <input type="text" id="fname" maxlength="20" required>
+      <label for="lname">Last Name<span class="required">*</span></label>
+      <input type="text" id="lname" maxlength="20" required>
+      </div>
+
+      <div>
+      <label for="dob">D.O.B<span class="required">*</span></label>
+      <input type="date" id="dob" required>
+      </div>
+
+      <div>
+      <label for="gender">Gender<span class="required">*</span></label>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="Female" name="gender">
+      <label for="Female">Female</label>
+      <input type="radio" id="other" name="gender">
+      <label for="other">other</label>
+      </div>
+
+      <div>
+      <label for="uname">Enter Username<span class="required">*</span></label>
+      <input type="text" id="uname" placeholder="Enter between 3 to 15" maxlength="15" minlength="3" required>
+      <label for="password">Password<span class="required">*</span></label>
+      <input type="password" id="password" placeholder="password should be 5 to 12" maxlength="12" minlength="5" required>
+      <label for="cpasswordS">Confirm Password<span class="required">*</span></label>
+      <input type="password" id="cpassword" placeholder="password should be 5 to 12" maxlength="12" minlength="5" required>
+      </div>
+
+      <div>
+      <input type="reset" name="reset" value="reset">
+      <input type="submit" name="submit" value="submit">
+      </div>
     </form>
+    <button onclick="back()">Back</button>
+    <script src="script.js"></script>
   </body>
 </html>

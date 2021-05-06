@@ -1,3 +1,5 @@
+// index.html page
+document.getElementById("signin").addEventListener('click',signIn);
 function signIn()
 {
   var user = (document.getElementById("user").value);
@@ -14,6 +16,20 @@ function signIn()
   }
 }
 
+
+
+document.getElementById("signup").addEventListener('click',signup);
 function signup(){
   location.href = "signup.html";
+}
+
+function back(){
+  location.href = "index.html";
+}
+
+// Signup.html
+
+function clear(){
+  alert("hi");
+  document.getElementById("myform").reset();
 }

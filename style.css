@@ -1,15 +1,28 @@
+/* Login */
+
 body {
   margin: 0;
   font-size: larger;
+  background-color: #000;
+  color: aliceblue;
 }
 
 .login {
   text-align: center;
-  border-radius: 5%;
-  border: 1px solid;
+  border-radius: 30px;
+  border: none;
   width: 25vw;
-  margin: 13vh auto;
-  box-shadow: 2px 2px 30px;
+  margin: 10vh auto;
+  box-shadow: 2px 2px 75px purple;
+  padding: 15px;
+}
+
+.login:hover {
+  box-shadow: 2px 2px 75px green;
+}
+
+.login h1 {
+  margin-bottom: 15px;
 }
 
 .a {
@@ -19,18 +32,45 @@ body {
   text-align: left;
 }
 
+#user,
+#psswrd {
+  width: 95%;
+  height: 30px;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+}
+
 .bttn1,
 .bttn2 {
-  padding: 3%;
+  padding: 3% 4%;
   display: block;
   margin: 10% auto;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
   width: 71%;
   box-shadow: 2px 2px 10px;
+  font-size: 20px;
 }
 
 .bttn1:hover,
 .bttn2:hover {
-  box-shadow: 4px 4px 10px;
+  box-shadow: 0px 0px 20px;
   width: 73%;
-  background-color: #28df99;
+  color: green;
+}
+
+/* Signup Page */
+
+.required {
+  color: red;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
 }
